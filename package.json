@@ -1,0 +1,64 @@
+{
+  "name": "cyberdeck-runner",
+  "version": "1.0.0",
+  "description": "Browser-based cyberdeck simulator for Shadowrun 5e",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack-dev-server"
+  },
+  "author": "Adam Fitzpatrick",
+  "license": "MIT",
+  "devDependencies": {
+    "@testing-library/react": "^9.5.0",
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-select": "^3.0.11",
+    "@types/sinon": "^7.5.2",
+    "@types/uuid": "^7.0.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "faker": "^4.1.0",
+    "handlebars": "^4.7.6",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "json-schema-faker": "^0.5.0-rc23",
+    "nyc": "^15.0.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-select": "^3.1.0",
+    "resource-hints-webpack-plugin": "0.0.2",
+    "sinon": "^9.0.1",
+    "standard": "^14.3.1",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.2",
+    "webpack": "^4.42.0",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.tsx",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "src/**/*.spec.tsx",
+      "src/**/*.spec.ts"
+    ],
+    "reporter": [
+      "lcov",
+      "text"
+    ],
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "require": [
+      "ts-node/register",
+      "tsconfig-paths/register"
+    ],
+    "all": true,
+    "check-coverage": true
+  }
+}

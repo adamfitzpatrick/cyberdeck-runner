@@ -1,0 +1,14 @@
+.base {
+    margin-top: 1rem;
+    width: var(--sidebar-standard-width);
+}
+
+.indentedInput {
+    margin-left: 1rem;
+}
+
+.heading {
+    font-size: var(--section-heading-size);
+    color: var(--light-text);
+    text-transform: uppercase;
+}

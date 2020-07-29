@@ -1,0 +1,22 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --white: rgb(255, 255, 255);
+    --red: rgb(180, 15, 15);
+    --green: rgb(19, 179, 54);
+    --default-background: rgb(45, 51, 66);
+    --darker-background: rgb(39, 44, 56);
+    --accent-red: rgb(184, 81, 102);
+    --accent-green: rgb(56, 145, 82);
+    --accent-yellow: rgb(203, 170, 100);
+    --accent-blue: rgb(25, 82, 134);
+
+    --light-text: #fff;
+
+    --section-heading-size: 0.8rem;
+    --sidebar-standard-width: 14rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato';
+}

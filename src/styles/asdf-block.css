@@ -1,0 +1,13 @@
+.base {
+    display: grid;
+    grid-template-columns: repeat(2, 6rem);
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.heading {
+    position: absolute;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}

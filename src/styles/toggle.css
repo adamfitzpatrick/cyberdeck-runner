@@ -1,0 +1,52 @@
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.5rem;
+}
+
+.base {
+    display: flex;
+    align-items: center;
+    color: var(--light-text);
+    background: var(--darker-background);
+    height: 2rem;
+    border: 1px solid var(--black);
+    border-radius: 0.1rem;
+    font-size: 0.8rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.button {
+    background: transparent;
+    border: 0;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    margin-left: 1px;
+}
+
+.on {
+    background: var(--red);
+}
+
+.checkbox { width: 0; }
+
+.indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid black;
+    margin: 0 1rem;
+}
+
+.numeric {
+    position: absolute;
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--light-text);
+    background-color: transparent;
+    width: 2rem;
+    text-align: center;
+    right: 1rem;
+}

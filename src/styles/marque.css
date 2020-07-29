@@ -1,0 +1,31 @@
+.base {
+    position: relative;
+    width: 50vw;
+    height: 3rem;
+    background: linear-gradient(90deg, transparent, var(--accent-red), transparent);
+}
+
+.interior {
+    background: var(--default-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:2.8rem;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.settings {
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    background: none;
+    border: none;
+    color: var(--light-text);
+}

@@ -1,0 +1,20 @@
+.heading {
+    font-size: var(--section-heading-size);
+    color: var(--light-text);
+    text-transform: uppercase;
+}
+
+.modeBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotSimBlock {
+    transition: opacity 0.15s ease-in-out;
+    opacity: 0;
+}
+
+.hotSimBlockVisible {
+    opacity: 1;
+}

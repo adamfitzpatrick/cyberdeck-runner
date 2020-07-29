@@ -1,0 +1,49 @@
+.base {
+    position: relative;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    background-color: var(--darker-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.label {
+    grid-column: 1 / span 2;
+    color: var(--light-text);
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin-bottom: 0.25rem;
+}
+
+.indicators {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--black);
+}
+
+.on {
+    background: var(--red);
+}
+
+.buttonOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border: 0;
+}

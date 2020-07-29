@@ -1,0 +1,61 @@
+.base {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--darker-background);
+    border-left: 5px solid;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.attack{
+    border-left-color: var(--accent-red);
+    color: var(--accent-red)
+}
+
+.sleaze {
+    border-left-color: var(--accent-green);
+    color: var(--accent-green);
+}
+
+.dataProcessing {
+    border-left-color: var(--accent-yellow);
+    color: var(--accent-yellow);
+}
+
+.firewall {
+    border-left-color: var(--accent-blue);
+    color: var(--accent-blue);
+}
+
+.label {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.value {
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 6rem;
+    top: 0;
+    width: 6rem;
+    text-align: center;
+    color: var(--light-text);
+}
+
+.buttonOverlay {
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 6rem;
+    height: 6rem;
+    border: 0;
+    color: transparent;
+    background: none;
+    padding: 0;
+}
+
+.swapFromButton {
+    background-color: rgba(12, 24, 47, 0.9);
+}

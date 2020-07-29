@@ -1,0 +1,26 @@
+.base {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--black);
+    height: 2rem;
+    padding: 0 1rem;
+    background: var(--darker-background);
+    color: var(--light-text);
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid var(--white);
+    color: var(--light-text);
+    background-color: transparent;
+    width: 3rem;
+    text-align: center;
+}
+
+.disabled {
+    opacity: 0.5;
+}

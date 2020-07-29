@@ -1,0 +1,9 @@
+.base {
+    width: var(--sidebar-standard-width);
+}
+
+.heading {
+    font-size: var(--section-heading-size);
+    color: var(--light-text);
+    text-transform: uppercase;
+}

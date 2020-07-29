@@ -43,17 +43,22 @@ module.exports = {
       test: /\.hbs$/,
       use: { loader: 'handlebars-loader' }
     }, {
+      test: /global\.css/,
+      use: [
+        'style-loader',
+        'css-loader'
+      ]
+    }, {
       test: /\.css$/,
-      use: [{
-        loader: 'style-loader'
-      }, {
-        loader: 'typings-for-css-modules-loader',
-        options: {
-          modules: true,
-          namedExport: true,
-          localIdentName: '[name]__[local]--[hash:base64:5]'
+      exclude: /global\.css/,
+      use: [
+        'style-loader',
+        '@teamsupercell/typings-for-css-modules-loader',
+        {
+          loader: 'css-loader',
+          options: { modules: { localIdentName: '[name]__[local]--[hash:base64:5]' }}
         }
-      }]
+      ]
     }, {
       test: /\.(svg|jpg|png)$/,
       loader: 'url-loader',
@@ -71,7 +76,8 @@ module.exports = {
       '@components': path.resolve(process.cwd(), 'src/components'),
       '@context': path.resolve(process.cwd(), 'src/context'),
       '@models': path.resolve(process.cwd(), 'models'),
-      '@services': path.resolve(process.cwd(), 'src/services')
+      '@services': path.resolve(process.cwd(), 'src/services'),
+      '@styles': path.resolve(process.cwd(), 'src/styles')
     }
   },
   devtool: 'inline-source-map',

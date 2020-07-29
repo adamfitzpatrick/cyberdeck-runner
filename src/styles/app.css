@@ -1,0 +1,19 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--default-background);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: var(--sidebar-standard-width);
+    padding: 1rem;
+}
+
+.center {
+    width: calc(100vw - 2 * var(--standard-sidebar-width));
+}
+

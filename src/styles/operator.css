@@ -1,0 +1,16 @@
+.heading {
+    font-size: var(--section-heading-size);
+    color: var(--light-text);
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.attributes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+.edge {
+    grid-column: 2 / span 2;
+}

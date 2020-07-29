@@ -1,0 +1,19 @@
+.base {
+    background-color: var(--darker-background);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--light-text);
+    padding: 0.5rem;
+}
+
+.specializationButton {
+    background: none;
+    border: 0;
+    color: var(--light-text);
+    font-size: 0.6rem;
+}
+
+.rating {
+    font-size: 1.3rem;
+}

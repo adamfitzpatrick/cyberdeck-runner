@@ -1,0 +1,42 @@
+.base {
+    position: relative;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    color: var(--light-text);
+    background-color: var(--darker-background);
+}
+
+.graphicBase {
+    width: 3rem;
+    height: 3rem;
+}
+
+.graphic {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+}
+
+.arc {
+    stroke-width: 8px;
+    fill: none;
+}
+
+.dataWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}

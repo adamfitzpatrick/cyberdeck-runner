@@ -1,0 +1,20 @@
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: absolute;
+    padding: 1rem;
+    background-color: var(--darker-background);
+    border: 1px solid var(--black);
+    border-radius: 1rem;
+    color: var(--light-text);
+
+}

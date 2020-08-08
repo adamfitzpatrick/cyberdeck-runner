@@ -13,5 +13,5 @@ export const populateMockData = () => {
 }
 
 if (window) {
-    (window as { [objName: string]: any })['populateMockData'] = populateMockData
+    (window as { [objName: string]: any })['__populateMockData'] = populateMockData
 }

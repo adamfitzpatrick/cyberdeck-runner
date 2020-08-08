@@ -1,6 +1,6 @@
 # cyberdeck-runner
 
-Please not that this application is currently in an early beta state.
+Please note that this application is currently in an early beta state.
 
 **cyberdeck-runner** is a SPA designed to simulate a Cyberdeck as used in the
 [Shadowrun Fifth Edition](https://en.wikipedia.org/wiki/Shadowrun) tabletop role playing game. The

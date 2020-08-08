@@ -9,12 +9,14 @@ const logo = null
 
 const mode = yargs.argv.p ? 'production' : 'development'
 
+const entry = { main: path.join(process.cwd(), 'src', 'index.tsx') }
+if (mode === 'development') {
+  entry.mocks = path.join(process.cwd(), 'mock-data', 'index.ts')
+}
+
 module.exports = {
   mode,
-  entry: {
-    'main': path.join(process.cwd(), 'src', 'index.tsx'),
-    'mocks': path.join(process.cwd(), 'mock-data', 'index.ts')
-  },
+  entry,
   externals: {},
   output: {
     path: path.join(process.cwd(), 'build'),

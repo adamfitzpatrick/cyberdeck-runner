@@ -1,6 +1,6 @@
 {
   "name": "cyberdeck-runner",
-  "version": "BETA",
+  "version": "0.1.0",
   "description": "Browser-based cyberdeck simulator for Shadowrun 5e",
   "main": "src/index.js",
   "scripts": {
